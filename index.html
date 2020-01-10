@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title> </title>
+        <title>Witcher Quiz</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Fondamento|Kaushan+Script|Marck+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css"></link>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,74 +23,93 @@
         <div class="main-div">
             <h1>Witcher Trivia Quiz</h1>
             <br>
-            <p>Test you knowledge! Complete the quiz is the time allowed</p>
+            <p class="pmain">Test you knowledge! Complete the quiz in the time allowed</p>
             <!--start button on page load, hides/empties when button is clicked-->
             <div id="start">
                 <button id="start-btn">START</button>
             </div>
+
+            <div id="timer-div">
+                <p>timer goes here</p>
+            </div>
             
             <!--After start button is clicked, div appears and quiz begins-->
-            <div id="questions">
+            <div id="questions-div">
                 <div id="question-1">
-                    <p>???</p>
-                        <ul>
-                            <li class="answer" id="q1-a">A</li><p class="answer-txt">Answer 1</p><br>
-                            <li class="answer" id="q1-b">B</li><p class="answer-txt">Answer 2</p><br>
-                            <li class="answer" id="q1-c">C</li><p class="answer-txt">Answer 3</p><br>
-                            <li class="answer" id="q1-d">D</li><p class="answer-txt">Answer 4</p><br>
-                        </ul>
+                    <form id="form-1">
+                        <p class="question">What is the name of Geralt's musical companion?</p>
+                            <input type="radio" name="question1" value="Yarpen"><p class="answer-txt">Yarpen</p><br>
+                            <input type="radio" name="question1" value="Dandelion"><p class="answer-txt">Dandelion</p><br>
+                            <input type="radio" name="question1" value="Eskel"><p class="answer-txt">Eskel</p><br>
+                            <input type="radio" name="question1" value="Ciri"><p class="answer-txt">Ciri</p><br>
+                            
+                    </form>
                 </div>
 
                 <hr>
 
                 <div id="question-2">
-                    <p>???</p>
-                        <ul>
-                            <li class="answer" id="q2-a">A</li><p class="answer-txt">Answer 1</p><br>
-                            <li class="answer" id="q2-b">B</li><p class="answer-txt">Answer 2</p><br>
-                            <li class="answer" id="q2-c">C</li><p class="answer-txt">Answer 3</p><br>
-                            <li class="answer" id="q2-d">D</li><p class="answer-txt">Answer 4</p><br>
-                        </ul>
+                    <form id="form-2">
+                        <p class="question">What is one of Geralt's many nicknames?</p>
+                            <input type="radio" name="question2" value="White Dog"><p class="answer-txt">White Dog</p><br>
+                            <input type="radio" name="question2" value="Savior of Cintran"><p class="answer-txt">Savior of Cintran</p><br>
+                            <input type="radio" name="question2" value="Butcher of Blaviken"><p class="answer-txt">Butcher of Blaviken</p><br>
+                            <input type="radio" name="question2" value="Roque of Redania"><p class="answer-txt">Roque of Redania</p><br>
+                           
+                    </form>
                 </div>
 
                 <hr>
 
                 <div id="question-3">
-                    <p>???</p>
-                        <ul>
-                            <li class="answer" id="q3-a">A</li><p class="answer-txt">Answer 1</p><br>
-                            <li class="answer" id="q3-b">B</li><p class="answer-txt">Answer 2</p><br>
-                            <li class="answer" id="q3-c">C</li><p class="answer-txt">Answer 3</p><br>
-                            <li class="answer" id="q3-d">D</li><p class="answer-txt">Answer 4</p><br>
-                        </ul>
+                    <form id="form-3">
+                        <p class="question">Geralt trained as a witcher at what location?</p>
+                            <input type="radio" name="question3" value="Redania"><p class="answer-txt">Redania</p><br>
+                            <input type="radio" name="question3" value="Skellige"><p class="answer-txt">Skellige</p><br>
+                            <input type="radio" name="question3" value="Nilfgaard"><p class="answer-txt">Nilfgaard</p><br>
+                            <input type="radio" name="question3" value="Kaer Morhen"><p class="answer-txt">Kaer Morhen</p><br>
+                           
+                    </form>
                 </div>
 
                 <hr>
 
                 <div id="question-4">
-                    <p>???</p>
-                        <ul>
-                            <li class="answer" id="q4-a">A</li><p class="answer-txt">Answer 1</p><br>
-                            <li class="answer" id="q4-b">B</li><p class="answer-txt">Answer 2</p><br>
-                            <li class="answer" id="q4-c">C</li><p class="answer-txt">Answer 3</p><br>
-                            <li class="answer" id="q4-d">D</li><p class="answer-txt">Answer 4</p><br>
-                        </ul>
+                    <form id="form-4">
+                        <p class="question">Geralt was trained by?</p>
+                            <input type="radio" name="question4" value="Vesemir"><p class="answer-txt">Vesemir</p><br>
+                            <input type="radio" name="question4" value="Lambert"><p class="answer-txt">Lambert</p><br>
+                            <input type="radio" name="question4" value="Eskel"><p class="answer-txt">Eskel</p><br>
+                            <input type="radio" name="question4" value="Emhyr"><p class="answer-txt">Emhyr</p><br>
+                            
+                    </form>
                 </div>
 
                 <hr>
 
                 <div id="question-5">
-                    <p>???</p>
-                        <ul>
-                            <li class="answer" id="q5-a">A</li><p class="answer-txt">Answer 1</p><br>
-                            <li class="answer" id="q5-b">B</li><p class="answer-txt">Answer 2</p><br>
-                            <li class="answer" id="q5-c">C</li><p class="answer-txt">Answer 3</p><br>
-                            <li class="answer" id="q5-d">D</li><p class="answer-txt">Answer 4</p><br>
-                        </ul>
+                    <form id="form-4">
+                        <p class="question">What is the name of Geralt's "Child of Suprise"?</p>
+                            <input type="radio" name="question5" value="Triss"><p class="answer-txt">Triss</p><br>
+                            <input type="radio" name="question5" value="Pavetta"><p class="answer-txt">Pavetta</p><br>
+                            <input type="radio" name="question5" value="Calanthe"><p class="answer-txt">Calanthe</p><br>
+                            <input type="radio" name="question5" value="Cirilla"><p class="answer-txt">Cirilla</p><br>
+                    </form>
                 </div>
                 
+                <hr>
+
+                <div id="submit-div">
+                    <button id="submit-btn">Submit</button>
+                </div>
 
             </div>
+
+            <div id="result-div">
+                <h4>correct answers:</h4>
+                <h4>wrong answers:</h4>
+            </div>
+
         </div>
 
 

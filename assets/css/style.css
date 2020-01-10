@@ -1,14 +1,97 @@
+
+body {
+    box-sizing: border-box;
+    background-image: url(../images/medallion.jpg);
+}
+
+h1 {
+    font-family: 'Fondamento', cursive;
+    font-size:30px;
+}
+
 .answer-txt {
     display: inline;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
 }
 
-.answer {
-    background-color: aqua;
-    display: inline-block;
-    padding: 5px 5px 5px 5px;
-    margin: 5px;
+.question {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
 }
 
-#questions {
+.main-div {
+    width: 70%;
+    margin: auto;
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1.5%;
+}
+
+.pmain{
+    font-family: fantasy;
+}
+
+#questions-div {
     display:none;
+}
+
+#timer-div{
+    display:none;
+}
+
+#result-div{
+    display:none;
+}
+
+#start-btn {
+    cursor: pointer;
+    font-weight: 800;
+    background-color: red;
+    margin-bottom: 10px;
+    
+}
+
+input{
+    cursor: pointer;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+}
+
+input:hover{
+    transform: translateY(-2px);
+    transition: transform 150ms;
+}
+
+#start-btn:hover {
+    box-shadow: 0 2px 3px 0 darkred;
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+
+#submit-btn {
+    cursor: pointer;
+    font-weight: 800;
+    background-color: red;
+    margin-bottom: 10px;
+    
+}
+
+#submit-btn:hover {
+    box-shadow: 0 2px 3px 0 darkred;
+    transform: translateY(-1px);
+    transition: transform 150ms;
+    
+}
+
+#submit-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
