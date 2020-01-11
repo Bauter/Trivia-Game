@@ -51,11 +51,11 @@ function onSubmit() { //function will not run inside document.ready.....
 
        
 
-        console.log(answerArray[0]);
-        console.log(answerArray[1]);
-        console.log(answerArray[2]);
-        console.log(answerArray[3]);
-        console.log(answerArray[4]); 
+        console.log("Q1 answer: " + answerArray[0]);
+        console.log("Q2 answer: " + answerArray[1]);
+        console.log("Q3 answer: " + answerArray[2]);
+        console.log("Q4 answer: " + answerArray[3]);
+        console.log("Q5 answer: " + answerArray[4]); 
     
     
     
