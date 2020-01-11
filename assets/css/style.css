@@ -97,3 +97,21 @@ input:hover{
     align-items: center;
     flex-direction: column;
 } */
+
+#reset-btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 800;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+#reset-div {
+    display: none;
+}
+
+#reset-btn:hover {
+    box-shadow: 0 2px 3px 0 darkred;
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}

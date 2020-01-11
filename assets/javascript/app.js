@@ -40,10 +40,12 @@ function onSubmit() { //function will not run inside document.ready.....
         };
     
     
-
+    
     let result = document.getElementById('result-div');
     result.innerHTML = "<h2>Your correct answers: " + correctAnswers + " / Your incorrect answers: " + wrongAnswers +"</h2>"
     $('#questions-div').empty();
+    $('#timer-div').empty();
+    $('#reset-div').show();
     // try to make reset
     return false;
 };
@@ -59,14 +61,20 @@ $(document).ready(() => {
         $('#start').empty();
         $('#questions-div').show();
         $('#timer-div').show();
-        timer() // timer starts
+        timer(60,) // timer starts
     });
 
     // timer function goes here
-    timer = function() {
-        // start timer and display to DOM
+    timer = function(seconds, div ) {
+       var time = 60;
+       
+       
+        setInterval()
     };
 
+    $('#reset-btn').on('click', () => {
+        location.reload();
+    });
 
 
 
@@ -74,6 +82,7 @@ $(document).ready(() => {
 
 
 
+});
 
 
 
@@ -81,9 +90,7 @@ $(document).ready(() => {
 
 
 
-
-
- // previous attempts at pulling form values and comparing.... left to show work/effort
+ // previous attempts at pulling form values and comparing.... left to show work/effort.. removed from document.ready
 
 
 
@@ -330,4 +337,3 @@ $(document).ready(() => {
 
 
 
-})
