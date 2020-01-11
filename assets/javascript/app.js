@@ -11,43 +11,61 @@ function onSubmit() { //function will not run inside document.ready.....
 
         if(question1 == answerArray[0]) {
             correctAnswers++;
+            console.log("question 1 right, correct score: " + correctAnswers)
         } else {
             wrongAnswers++;
+            console.log("question 1 wrong, wrong score: " + wrongAnswers)
         };
     
         if(question2 == answerArray[1]) { 
             correctAnswers++;
+            console.log("question 2 right, correct score: " + correctAnswers)
         } else {
             wrongAnswers++;
+            console.log("question 2 wrong, wrong score: " + wrongAnswers)
         };
     
         if(question3 == answerArray[2]) { 
             correctAnswers++;
+            console.log("question 3 right, correct score: " + correctAnswers)
         } else {
             wrongAnswers++;
+            console.log("question 3 wrong, wrong score: " + wrongAnswers)
         };
     
         if(question4 == answerArray[3]) {
             correctAnswers++;
+            console.log("question 4 right, correct score: " + correctAnswers)
         } else {
             wrongAnswers++;
+            console.log("question 4 wrong, wrong score: " + wrongAnswers)
         };
     
         if(question5 == answerArray[4]) {
             correctAnswers++;
+            console.log("question 5 right, correct score: " + correctAnswers)
         } else {
             wrongAnswers++;
+            console.log("question 5 wrong, wrong score: " + wrongAnswers)
         };
+
+       
+
+        console.log(answerArray[0]);
+        console.log(answerArray[1]);
+        console.log(answerArray[2]);
+        console.log(answerArray[3]);
+        console.log(answerArray[4]); 
     
     
     
     let result = document.getElementById('result-div');
-    result.innerHTML = "<h2>Your correct answers: " + correctAnswers + " / Your incorrect answers: " + wrongAnswers +"</h2>"
+    result.innerHTML = "<h2>Correct answers: " + correctAnswers + " / Incorrect answers: " + wrongAnswers +"</h2>"
     $('#questions-div').empty();
     $('#timer-div').remove();
     $('#reset-div').show();
-    clearInterval(timer, 1000);
-    // try to make reset
+    //clearInterval(timer, 1000);
+    time = 0;
     return false;
 };
 
@@ -58,8 +76,6 @@ let time = 60;
 
 $(document).ready(() => {
     
-    
-
     $('#start-btn').on('click', () => {
         $('#start').empty();
         $('#questions-div').show();
@@ -71,14 +87,12 @@ $(document).ready(() => {
     function timer() {
         if(time > 0) {
             time--;
+            console.log(time);
         } else {
             clearInterval(timer);
         };
 
-        if(time === 0) {
-            $('timer-div').remove();
-            onSubmit();
-        }
+    
         
        $('#timer-div').html("<h3>You have " + time + " secs left to complete quiz</h3>")
         
@@ -87,12 +101,6 @@ $(document).ready(() => {
     $('#reset-btn').on('click', () => {
         location.reload();
     });
-
-
-
-
-
-
 
 });
 
@@ -112,11 +120,11 @@ $(document).ready(() => {
         // for array approach
   // let answerArray = ["Dandelion", "Butcher of Blaviken", "Kaer Morhen", "Vesemir", "Cirilla"];
 
-    console.log(answerArray[0]);
-    console.log(answerArray[1]);
-    console.log(answerArray[2]);
-    console.log(answerArray[3]);
-    console.log(answerArray[4]); 
+    //console.log(answerArray[0]);
+    //console.log(answerArray[1]);
+    //console.log(answerArray[2]);
+    //console.log(answerArray[3]);
+    //console.log(answerArray[4]); 
     
         /* elementsByName selector method
 
@@ -128,6 +136,13 @@ $(document).ready(() => {
 
         */
 
+    // console.lol(question1);
+    // console.log(question2);
+    // console.log(question3);
+    // console.log(question4);
+    // console.log(question5);
+
+
 
             //helpful in array approach
       /*  let question1 = document.forms["form"]["question1"].value;
@@ -136,6 +151,11 @@ $(document).ready(() => {
         let question4 = document.forms["form"]["question4"].value;
         let question5 = document.forms["form"]["question5"].value; 
       */
+        // console.lol(question1);
+        // console.log(question2);
+        // console.log(question3);
+        // console.log(question4);
+        // console.log(question5);
 
     // start button clicked, start div disappears, question div appears, timer div appears.
     
@@ -211,6 +231,12 @@ $(document).ready(() => {
        // let question4 = document.forms["form"]["question4"].value;
        // let question5 = document.forms["form"]["question5"].value; 
         
+       //console.lol(question1);
+       //console.log(question2);
+       //console.log(question3);
+       //console.log(question4);
+       //console.log(question5);
+
       /*  for(var i = 1; i <= numberOfQuestions; i++) {
             if(eval("question" + i) == answerArray[i - 1]) {
                 correctAnswers++;
@@ -261,7 +287,11 @@ $(document).ready(() => {
     let question4 = document.querySelector('input[name=question4]:checked').value
     let question5 = document.querySelector('input[name=question5]:checked').value
 
-
+    console.lol(question1);
+    console.log(question2);
+    console.log(question3);
+    console.log(question4);
+    console.log(question5);
 
     // array approach outside function
 

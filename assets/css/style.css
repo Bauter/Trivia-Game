@@ -9,6 +9,10 @@ h1 {
     font-size:30px;
 }
 
+h2 {
+    font-family: 'Fondamento', cursive;
+}
+
 .answer-txt {
     display: inline;
     font-family: 'Marck Script', cursive;
