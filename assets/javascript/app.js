@@ -94,7 +94,7 @@ $(document).ready(() => {
 
     
         
-       $('#timer-div').html("<h3>You have " + time + " secs left to complete quiz</h3>")
+       $('#timer-div').html("<h3>You have " + "<span>" + time + "</span>" + " secs left to complete quiz</h3>")
         
     };
     // reset button 

@@ -13,6 +13,10 @@ h2 {
     font-family: 'Fondamento', cursive;
 }
 
+span {
+    color: red;
+}
+
 .answer-txt {
     display: inline;
     font-family: 'Marck Script', cursive;
