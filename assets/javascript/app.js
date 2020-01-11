@@ -64,14 +64,14 @@ function onSubmit() { //function will not run inside document.ready.....
     $('#questions-div').empty();
     $('#timer-div').remove();
     $('#reset-div').show();
-    //clearInterval(timer, 1000);
+    clearInterval(interval);
     time = 0;
     return false;
 };
 
 
-let time = 60;
-
+let time = 30;
+let interval;
 
 
 $(document).ready(() => {
@@ -80,7 +80,7 @@ $(document).ready(() => {
         $('#start').empty();
         $('#questions-div').show();
         $('#timer-div').show();
-        setInterval(timer, 1000); // timer starts
+        interval = setInterval(timer, 1000); // timer starts
     });
 
     // timer function goes here
@@ -89,7 +89,8 @@ $(document).ready(() => {
             time--;
             console.log(time);
         } else {
-            clearInterval(timer);
+            clearInterval(interval);
+            onSubmit();
         };
 
     
