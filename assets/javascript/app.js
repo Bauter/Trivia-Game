@@ -44,34 +44,46 @@ function onSubmit() { //function will not run inside document.ready.....
     let result = document.getElementById('result-div');
     result.innerHTML = "<h2>Your correct answers: " + correctAnswers + " / Your incorrect answers: " + wrongAnswers +"</h2>"
     $('#questions-div').empty();
-    $('#timer-div').empty();
+    $('#timer-div').remove();
     $('#reset-div').show();
+    clearInterval(timer, 1000);
     // try to make reset
     return false;
 };
 
 
-
+let time = 60;
 
 
 
 $(document).ready(() => {
     
+    
+
     $('#start-btn').on('click', () => {
         $('#start').empty();
         $('#questions-div').show();
         $('#timer-div').show();
-        timer(60,) // timer starts
+        setInterval(timer, 1000); // timer starts
     });
 
     // timer function goes here
-    timer = function(seconds, div ) {
-       var time = 60;
-       
-       
-        setInterval()
-    };
+    function timer() {
+        if(time > 0) {
+            time--;
+        } else {
+            clearInterval(timer);
+        };
 
+        if(time === 0) {
+            $('timer-div').remove();
+            onSubmit();
+        }
+        
+       $('#timer-div').html("<h3>You have " + time + " secs left to complete quiz</h3>")
+        
+    };
+    // reset button 
     $('#reset-btn').on('click', () => {
         location.reload();
     });
