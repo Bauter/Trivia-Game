@@ -35,79 +35,104 @@
             
             <!--After start button is clicked, div appears and quiz begins-->
             <div id="questions-div">
-                <div id="question-1">
-                    <form id="form-1">
+
+                <form name="form" onsubmit="return onSubmit()" >
+
+                    <div id="question-1">
+                    
                         <p class="question">What is the name of Geralt's musical companion?</p>
                             <input type="radio" name="question1" value="Yarpen"><p class="answer-txt">Yarpen</p><br>
                             <input type="radio" name="question1" value="Dandelion"><p class="answer-txt">Dandelion</p><br>
                             <input type="radio" name="question1" value="Eskel"><p class="answer-txt">Eskel</p><br>
                             <input type="radio" name="question1" value="Ciri"><p class="answer-txt">Ciri</p><br>
                             
-                    </form>
-                </div>
+                    
 
-                <hr>
+                    <br>
 
-                <div id="question-2">
-                    <form id="form-2">
+                    </div>
+
+                    <hr>
+
+                    <div id="question-2">
+                    
                         <p class="question">What is one of Geralt's many nicknames?</p>
                             <input type="radio" name="question2" value="White Dog"><p class="answer-txt">White Dog</p><br>
                             <input type="radio" name="question2" value="Savior of Cintran"><p class="answer-txt">Savior of Cintran</p><br>
                             <input type="radio" name="question2" value="Butcher of Blaviken"><p class="answer-txt">Butcher of Blaviken</p><br>
                             <input type="radio" name="question2" value="Roque of Redania"><p class="answer-txt">Roque of Redania</p><br>
                            
-                    </form>
-                </div>
+                    
 
-                <hr>
+                    <br>
 
-                <div id="question-3">
-                    <form id="form-3">
+                    </div>
+
+                    <hr>
+
+                    <div id="question-3">
+                   
                         <p class="question">Geralt trained as a witcher at what location?</p>
                             <input type="radio" name="question3" value="Redania"><p class="answer-txt">Redania</p><br>
                             <input type="radio" name="question3" value="Skellige"><p class="answer-txt">Skellige</p><br>
                             <input type="radio" name="question3" value="Nilfgaard"><p class="answer-txt">Nilfgaard</p><br>
                             <input type="radio" name="question3" value="Kaer Morhen"><p class="answer-txt">Kaer Morhen</p><br>
                            
-                    </form>
-                </div>
+                    
 
-                <hr>
+                    <br>
 
-                <div id="question-4">
-                    <form id="form-4">
+                    </div>
+
+                    <hr>
+
+                    <div id="question-4">
+                   
                         <p class="question">Geralt was trained by?</p>
                             <input type="radio" name="question4" value="Vesemir"><p class="answer-txt">Vesemir</p><br>
                             <input type="radio" name="question4" value="Lambert"><p class="answer-txt">Lambert</p><br>
                             <input type="radio" name="question4" value="Eskel"><p class="answer-txt">Eskel</p><br>
                             <input type="radio" name="question4" value="Emhyr"><p class="answer-txt">Emhyr</p><br>
                             
-                    </form>
-                </div>
+                    
 
-                <hr>
+                    <br>
 
-                <div id="question-5">
-                    <form id="form-4">
+                    </div>
+
+                    <hr>
+
+                    <div id="question-5">
+                    
                         <p class="question">What is the name of Geralt's "Child of Suprise"?</p>
                             <input type="radio" name="question5" value="Triss"><p class="answer-txt">Triss</p><br>
                             <input type="radio" name="question5" value="Pavetta"><p class="answer-txt">Pavetta</p><br>
                             <input type="radio" name="question5" value="Calanthe"><p class="answer-txt">Calanthe</p><br>
                             <input type="radio" name="question5" value="Cirilla"><p class="answer-txt">Cirilla</p><br>
-                    </form>
-                </div>
-                
-                <hr>
+                    
 
-                <div id="submit-div">
-                    <button id="submit-btn">Submit</button>
-                </div>
+                    <br>
+
+                    </div>
+
+                    <br>
+
+                    <button id="submit-btn" type="submit">Submit</button>
+                
+                    <hr>
+
+                </form>
+
+                <!--button below created in previous attempt, i believe using a button not associated with the form was part of the problem-->
+
+               <!-- <div id="submit-div">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div> -->
 
             </div>
 
             <div id="result-div">
-                <h4>correct answers:</h4>
-                <h4>wrong answers:</h4>
+                <!--DOM manipulation into here-->
             </div>
 
         </div>
