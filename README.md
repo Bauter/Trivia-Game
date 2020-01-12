@@ -60,9 +60,42 @@ Initially this project was designed for my "Web-dev coding boot-camp" as an entr
 
  -Below the five if / else statements we define another variable called 'result'. The innerHTML method is then used on 'result' to write text to the empty HTML result div.
 
- -Next we use Jquery methods '.empty()' to empty the 'question-div' clearing the questions from our HTML
+ -Next we use Jquery methods '.empty()' to empty the 'question-div' clearing the questions from our HTML page. Then '.remove()' to remove the 'timer-div' from the HTML page. And '.show()' to show the results div on the HTML page.
 
+ -Below the Jquery methods the clearInterval function is called passing variable 'interval' to cancel the setInterval that will later be created outside of onSubmit.
 
+ -'time' interval later created outside of onSubmit function is set to a value of 0.
+
+ -A variable 'audio' is assigned a value using document.getElementById, passing the id of the audio file 'witcher.mp3'.
+
+ -Jquery '.pause()' method is called on 'audio' to stop the music once onSubmit function is called.
+
+ -Lastly return is set to boolean value fo 'false'.
+
+-Outside of onSubmit function and before 'document.ready' function two variables are defined. A variable of 'time' is defined with a value of 30, this represents the starting value of the interval that will be counted down (the 30sec timer). A variable of 'interval' is defiend and no vaule is given.
+
+ -These variables exist between the onSubmit function and document.ready function because onSubmit is called within the 'onclick' attribute in the HTML file and will not function within the document.ready function. Both onSubmit and document.ready functions need to access both the 'time' and 'interval' variables adn that is why they are defined between the two function.
+
+-A 'document.ready' function is created. This function is used to hold the remaining functions and will not let them work until the webpage is fully loaded. Inside the function...
+
+-A Jquery onclick function is created for the 'start-btn', giving function to the start button created on the HTML page.
+ -Inside the start button onclick function Jquery methods are used to manipulate the DOM.
+ -Jquery method '.empty()' is used to empty the 'start' div removing the start button.
+ -Jquery method '.show()' is used to show the "questions-div' div to provide the questions.
+ -Jquery method '.show()' is also used to show the 'timer-div' that the timer will be displayed in.
+ -The variable 'interval' is then assigned the value of a function 'setInterval()", inside 'setInterval' a handler is passed called 'timer' this is a function that will be created later. Then a value of 1000 milliseconds is passed as 1000, this is the amount of time setInterval will take to run.
+ -A variable 'audio' is assigned a value using document.getElementById, passing the id of the audio file 'witcher.mp3'.
+ -Jquery method '.play()' is called on 'audio' to play the audio once start button is clicked.
+
+-A function called 'timer' is created.
+ -Inside timer we use a conditional if / else statement to compare the value of time.
+ -In the if statement, if 'time' value is greater than 0, time (originally set to 30), is incremented minus 1.
+ -in the else statement if 'time' is not greater than 0, clearInterval is used passing and argument of the variable 'interval', canceling setInterval, stopping the countdown.
+ -Outside of the if / else statement but still within the 'timer' function Jquery '.html()' method is called on 'timer-div' to print text displaying the interval countdown.
+
+-A Jquery onclick function is created for 'reset-btn'.
+ -Inside, Jquery '.reload()' is assigned to global variable 'location'. When reset-btn is clicked, this refreshes the page, resetting the game.
+ 
 ---Guidelines for Collaboration---
 
 -As I am still new to coding, and my initial projects will be used to create a portfolio to show to potential employers, i ask that no modifications are made at this time.
