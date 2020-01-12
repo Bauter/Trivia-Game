@@ -8,10 +8,16 @@ h1 {
     font-family: 'Fondamento', cursive;
     font-size:30px;
     margin: 2px;
+     background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 h2 {
     font-family: 'Fondamento', cursive;
+    background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 span {

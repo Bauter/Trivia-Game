@@ -66,6 +66,8 @@ function onSubmit() { //function will not run inside document.ready.....
     $('#reset-div').show();
     clearInterval(interval);
     time = 0;
+    audio = document.getElementById('witcher');
+    audio.pause();
     return false;
 };
 
@@ -80,7 +82,10 @@ $(document).ready(() => {
         $('#start').empty();
         $('#questions-div').show();
         $('#timer-div').show();
+        
         interval = setInterval(timer, 1000); // timer starts
+        let audio = document.getElementById('witcher');
+        audio.play();
     });
 
     // timer function goes here
