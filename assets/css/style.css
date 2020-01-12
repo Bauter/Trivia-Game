@@ -24,6 +24,17 @@ span {
     color: red;
 }
 
+input{
+    cursor: pointer;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+}
+
+input:hover{
+    transform: translateY(-2px);
+    transition: transform 150ms;
+}
+
 .material-icons {
     padding-top: 7px;
     background-image: linear-gradient(to left, black, darkred, red);
@@ -92,17 +103,6 @@ span {
     color: transparent;
 }
 
-input{
-    cursor: pointer;
-    font-family: 'Marck Script', cursive;
-    font-size: 20px;
-}
-
-input:hover{
-    transform: translateY(-2px);
-    transition: transform 150ms;
-}
-
 #start-btn:hover {
     box-shadow: 0 2px 3px 0 darkred;
     transform: translateY(-1px);
@@ -127,15 +127,6 @@ input:hover{
     transition: transform 150ms;
     
 }
-
-/* submit div created on previous attempt, no longer needed, left to show purpose
-
-#submit-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 
 #reset-btn {
     margin-bottom: 10px;

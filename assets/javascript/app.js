@@ -71,13 +71,13 @@ function onSubmit() { //function will not run inside document.ready.....
     return false;
 };
 
-
+// var refrenced both in onSubmit function and document ready function
 let time = 30;
 let interval;
 
 
 $(document).ready(() => {
-    
+    // start button click event
     $('#start-btn').on('click', () => {
         $('#start').empty();
         $('#questions-div').show();
@@ -98,12 +98,10 @@ $(document).ready(() => {
             onSubmit();
         };
 
-    
-        
        $('#timer-div').html("<h3>You have " + "<span>" + time + "</span>" + " secs left to complete quiz</h3>")
         
     };
-    // reset button 
+    // reset button click event
     $('#reset-btn').on('click', () => {
         location.reload();
     });
