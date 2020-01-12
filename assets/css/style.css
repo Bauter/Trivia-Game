@@ -24,6 +24,13 @@ span {
     color: red;
 }
 
+.material-icons {
+    padding-top: 7px;
+    background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .answer-txt {
     display: inline;
     font-family: 'Marck Script', cursive;
@@ -76,10 +83,13 @@ span {
 #start-btn {
     cursor: pointer;
     font-weight: 800;
-    background-color: red;
+    background-color: dimgray;
     margin-bottom: 10px;
     font-family: cursive ;
-    
+    font-size: 24px;
+    background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 input{
@@ -102,9 +112,13 @@ input:hover{
 #submit-btn {
     cursor: pointer;
     font-weight: 800;
-    background-color: red;
+    background-color:dimgray;
     margin-bottom: 10px;
     font-family: cursive;
+    font-size: 24px;
+    background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #submit-btn:hover {
@@ -127,8 +141,12 @@ input:hover{
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: 800;
-    background-color: red;
+    background-color:dimgray;
     margin-bottom: 10px;
+    font-size: 24px;
+    background-image: linear-gradient(to left, black, darkred, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #reset-div {
