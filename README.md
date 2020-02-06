@@ -1,6 +1,6 @@
 # Trivia-Game
 
----What is this repo?---
+## What is this repo? ##
 
 The purpose of this repo is to create a basic trivia quiz with "The Witcher" theme with a count down timer.
 
@@ -13,7 +13,11 @@ The purpose of this repo is to create a basic trivia quiz with "The Witcher" the
 
 Initially this project was designed for my "Web-dev coding boot-camp" as an entry level basic javascript / jquery project.
 
----How was this project created?---
+## Live-pages link ##
+
+https://bauter.github.io/Trivia-Game/
+
+### How was this project created? ###
 
 -Coding was done using Visual Studio Code ("https://code.visualstudio.com/") a text editor can be downloaded from their website.
 
@@ -25,7 +29,7 @@ Initially this project was designed for my "Web-dev coding boot-camp" as an entr
 
 -Button icons created using (https://material.io/resources/icons/?style=baseline). When selecting an icon, an HTML icon tag is provided that should be inserted next to the 'button-text' WITHIN the button element tags. Icon position can be controlled by placing icon tag either before or after the button text, position there for related to tag placement. A link tag can then be inserted into the HTML head tags to link the icon to your document. Styling can be manipulated by the provided icon class selector.
 
---Within the HTML file---
+#### Within the HTML file ####
 
  -'Main-div' created to hold all other divs.
 
@@ -49,7 +53,7 @@ Initially this project was designed for my "Web-dev coding boot-camp" as an entr
 
  -Outside of the closing 'main-div' tag we use an 'audio' element tag with a 'src' attribute refrencing the 'withcer.mp3' file inside the Audio directory. 
 
----In the Javascript app.js file---
+#### In the Javascript app.js file ####
 
 -The onSubmit function is created. 
  -Inside we define our 'correctAnswer' and 'wrongAnswer' variables and set to 0. Next an 'answerArray' is created containing five strings, each representing a correct answer.
@@ -96,11 +100,11 @@ Initially this project was designed for my "Web-dev coding boot-camp" as an entr
 -A Jquery onclick function is created for 'reset-btn'.
  -Inside, Jquery '.reload()' is assigned to global variable 'location'. When reset-btn is clicked, this refreshes the page, resetting the game.
  
----Guidelines for Collaboration---
+### Guidelines for Collaboration ###
 
 -As I am still new to coding, and my initial projects will be used to create a portfolio to show to potential employers, i ask that no modifications are made at this time.
 
--!However!-
+#### !However! ####
 
  -Any input to improve my coding would be GREATLY appreciated. I am not opposed to the files being pulled for the sake of modifying and using as an example to teach/explain alt. methods, better practice, etc. Again I would ask they not be pushed to the repo to modify the initial document, but instead be sent to me an some alt. way.
 
