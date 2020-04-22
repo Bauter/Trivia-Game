@@ -17,6 +17,8 @@ Initially this project was designed for my "Web-dev coding boot-camp" as an entr
 
 https://bauter.github.io/Trivia-Game/
 
+![witcher-trivia-app](witcherTrivia.gif)
+
 ### How was this project created? ###
 
 -Coding was done using Visual Studio Code ("https://code.visualstudio.com/") a text editor can be downloaded from their website.
